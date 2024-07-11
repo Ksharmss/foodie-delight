@@ -1,0 +1,40 @@
+.cards {
+    width: 25%;
+    margin-bottom: 2rem;
+    display: flex;
+    height: 350px;
+}
+
+p,button {
+    margin: 10px;
+}
+
+h1,h2 {
+    color: red;
+}
+
+.main-container {
+    padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+    flex-wrap: wrap;
+    padding-left: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+   .main-container
+   {
+    flex-direction: column!important;
+   }
+
+   .cards {
+    width: 100%!important;
+   }
+
+  }
+  .sub-container
+  {
+    text-align: center;
+  }

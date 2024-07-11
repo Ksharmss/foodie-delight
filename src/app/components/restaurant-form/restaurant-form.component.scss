@@ -1,0 +1,31 @@
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+}
+
+input {
+    margin: 10px;
+}
+
+.w-30 {
+    width: 30%;
+
+}
+
+.pd {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .w-30 {
+        width: 100%!important;
+    
+    } 
+}
+.back
+{
+    margin-right: 15px;
+    cursor: pointer;
+}

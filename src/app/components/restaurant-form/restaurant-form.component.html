@@ -1,0 +1,18 @@
+<form [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
+  <div class="form-container" [ngClass]="{'w-30':!restaurant}">
+    <h1 *ngIf="!restaurant" style="margin: 1rem;"><span class="back" (click)="navigate()">🔙</span>Add New Restaurant Below</h1>
+    <label for="name">Name</label>
+    <input id="name" [ngClass]="{'pd':!restaurant}" formControlName="name" type="text">
+
+
+    <label for="description">Description</label>
+    <input id="description" [ngClass]="{'pd':!restaurant}" formControlName="description" type="text">
+
+
+    <label for="location">Location</label>
+    <input id="location" [ngClass]="{'pd':!restaurant}" formControlName="location" type="text">
+
+  </div>
+  <button [ngClass]="{'pd w-30':!restaurant}" type="submit">Save</button>
+  <button [ngClass]="{'pd w-30':!restaurant}" *ngIf="restaurant" type="button" (click)="cancelEditing()">Cancel</button>
+</form>
