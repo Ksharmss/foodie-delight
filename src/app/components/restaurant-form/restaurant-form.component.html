@@ -11,7 +11,8 @@
 
     <label for="location">Location</label>
     <input id="location" [ngClass]="{'pd':!restaurant}" formControlName="location" type="text">
-
+    <label for="Image">Image Url</label>
+    <input id="Image" [ngClass]="{'pd':!restaurant}" formControlName="imgUrl" type="text">
   </div>
   <button [ngClass]="{'pd w-30':!restaurant}" type="submit">Save</button>
   <button [ngClass]="{'pd w-30':!restaurant}" *ngIf="restaurant" type="button" (click)="cancelEditing()">Cancel</button>

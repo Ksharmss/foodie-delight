@@ -25,6 +25,7 @@ export class RestaurantFormComponent {
       name: ['', [Validators.required]],
       description: ['', [Validators.required]],
       location: ['', [Validators.required]],
+      imgUrl:['',[Validators.required]]
     });
   }
 

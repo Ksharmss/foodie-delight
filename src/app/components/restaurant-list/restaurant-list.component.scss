@@ -35,7 +35,13 @@ h1,h2 {
    }
 
   }
-  .sub-container
+  
+  img{
+    width: 200px;
+    height: 200px;
+  }
+
+  .ht-auto
   {
-    text-align: center;
+    height: auto!important;
   }

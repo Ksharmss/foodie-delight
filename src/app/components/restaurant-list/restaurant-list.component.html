@@ -2,8 +2,9 @@
 
 
 <div class="main-container">
-    <div *ngFor="let restaurant of restaurants;let i = index" class="cards">
-      <div class="sub-container">
+    <div *ngFor="let restaurant of restaurants;let i = index" class="cards" [ngClass]="{'ht-auto':editIndex==i}">
+      <div>
+        <img [src]="restaurant.imgUrl">
         <h2>{{ restaurant.name }}</h2>
         <p>{{ restaurant.description }}</p>
         <p>{{ restaurant.location }}</p>
