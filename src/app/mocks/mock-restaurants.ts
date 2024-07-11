@@ -13,7 +13,7 @@ export const MOCK_RESTAURANTS = [
     },
     {
       id: '3',
-      name: 'Sushi World3😎',
+      name: 'Sushi SubWorld😎',
       description: 'Fresh and tasty sushi',
       location: 'Los Angeles, CA'
     },
@@ -31,43 +31,43 @@ export const MOCK_RESTAURANTS = [
     },
     {
       id: '7',
-      name: 'Hungries 3💃',
+      name: 'Hungries subs💃',
       description: 'Fresh and tasty sushi',
       location: 'Los Angeles, CA'
     },   
     {
       id: '8',
-      name: 'Hungries 4🕺',
+      name: 'Hungries ceams🕺',
       description: 'Fresh and tasty sushi',
       location: 'Los Angeles, CA'
     },
     {
       id: '9',
-      name: 'Hungries 5💃',
+      name: 'Hungries subty💃',
       description: 'Fresh and tasty sushi',
       location: 'Los Angeles, CA'
     },
     {
       id: '10',
-      name: 'Hungries 6👩‍🍳',
+      name: 'Hungries ics👩‍🍳',
       description: 'Fresh and tasty sushi',
       location: 'Los Angeles, CA'
     },
     {
       id: '11',
-      name: 'Hungries 7😋',
+      name: 'Hungries fresh😋',
       description: 'Fresh and tasty sushi',
       location: 'Los Angeles, CA'
     },
     {
       id: '12',
-      name: 'Pizza Paradise 1😎' ,
+      name: 'Pizza Paradise latu😎' ,
       description: 'Delicious pizzas and more',
       location: 'San Francisco, CA'
     },
     {
       id: '13',
-      name: 'Pizza Paradise 2😍',
+      name: 'Pizza Paradise pizaa😍',
       description: 'Delicious pizzas and more',
       location: 'San Francisco, CA'
     }

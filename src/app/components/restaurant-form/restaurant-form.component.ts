@@ -13,7 +13,6 @@ import { Router } from '@angular/router';
 })
 export class RestaurantFormComponent {
   @Input() restaurant: any;
-  @Output() refreshList = new EventEmitter<void>();
   @Output() cancelEdit = new EventEmitter<void>();
   restaurantForm: FormGroup;
 
@@ -23,9 +22,9 @@ export class RestaurantFormComponent {
     private router: Router
   ) {
     this.restaurantForm = this.fb.group({
-      name: ['', Validators.required],
-      description: ['', Validators.required],
-      location: ['', Validators.required],
+      name: ['', [Validators.required]],
+      description: ['', [Validators.required]],
+      location: ['', [Validators.required]],
     });
   }
 
@@ -43,8 +42,8 @@ export class RestaurantFormComponent {
     if (this.restaurantForm.valid) {
       if (this.restaurant) {
         this.restaurantService.updateRestaurant(this.restaurant.id, this.restaurantForm.value).subscribe(() => {
-          this.refreshList.emit();
-          alert('Restaurant eddited successfully')
+          alert('Restaurant eddited successfully');
+          this.cancelEditing()
         });
       } else {
         this.restaurantService.addRestaurant(this.restaurantForm.value).subscribe(() => {

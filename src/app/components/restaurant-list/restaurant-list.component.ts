@@ -22,25 +22,24 @@ export class RestaurantListComponent {
     this.loadRestaurants();
   }
 
+  //Method to load a restaurant
   loadRestaurants(): void {
     this.restaurantService.getRestaurants().subscribe((data) => {
       this.restaurants = data;
     });
   }
-
+  // Method to delete a restaurant
   deleteRestaurant(id: string) {
     this.restaurantService.deleteRestaurant(id).subscribe(() => {
-      this.refreshList();
-      alert('Restaurant deleted successfully')
+      alert('Restaurant deleted successfully');
     });
   }
+
+  
   startEditing(index: number): void {
     this.editIndex = index;
   }
-  refreshList(): void {
-    this.loadRestaurants();
-    this.editIndex=null;
-  }
+ 
   removeEditIndex()
   {
     this.editIndex =null;

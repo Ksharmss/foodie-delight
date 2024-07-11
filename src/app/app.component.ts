@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { RestaurantHeaderomponent } from './components/restaurant-card/restaurant-header.component';
+import { RestaurantHeaderomponent } from './components/restaurant-header/restaurant-header.component';
+
 
 @Component({
   selector: 'app-root',

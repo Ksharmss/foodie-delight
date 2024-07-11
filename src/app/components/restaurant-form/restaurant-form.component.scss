@@ -23,9 +23,17 @@ input {
         width: 100%!important;
     
     } 
+   h1
+   {
+    font-size: 18px!important;
+   }
 }
 .back
 {
     margin-right: 15px;
     cursor: pointer;
+}
+
+form{
+    padding-left: 3rem;
 }

@@ -9,10 +9,8 @@
         <p>{{ restaurant.location }}</p>
         <button (click)="deleteRestaurant(restaurant.id)">Delete</button>
         <button (click)="startEditing(i)">Edit</button>
-        <app-restaurant-form *ngIf="editIndex === i"  [restaurant]="restaurant" (refreshList)="refreshList()" (cancelEdit)="removeEditIndex()"></app-restaurant-form>
+        <app-restaurant-form *ngIf="editIndex === i"  [restaurant]="restaurant" (cancelEdit)="removeEditIndex()"></app-restaurant-form>
       </div>
     </div>
-
- 
 </div>
    
